@@ -9,6 +9,6 @@ $(document).ready(function () {
         console.log(myObj);
     }
 	};
-	xmlhttp.open("GET", "result.js", true);
+	xmlhttp.open("GET", "./js/result.js", true);
 	xmlhttp.send();
 })
