@@ -1,17 +1,14 @@
 console.log("Here")
+
 $(document).ready(function () {
-	console.log("Here")
-	$.ajax({
-                type: "POST",
-                url: "https://api.covid19india.org/data.json" ,
-                dataType: "json",
-                success: function (result, status, xhr) {
-                    console.log(result)
-  
-                    
-                },
-                error: function (xhr, status, error) {
-                    alert("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
-                }
-            });
+	console.log("Here2")
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        console.log(myObj);
+    }
+	};
+	xmlhttp.open("GET", "result.js", true);
+	xmlhttp.send();
 })
