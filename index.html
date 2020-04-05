@@ -12,17 +12,19 @@
   </head>
   <body>
   <div class="row" id="data1">
-    <table class="table table-bordered table-dark">
+    <table class="table table-bordered table-dark table-hover table-sm">
 	<thead>
     <tr>
       <th scope="col">Date</th>
-      <th scope="col">Data1</th>
+      <th scope="col">Total Confirmed</th>
+	  <th scope="col">Confirmed Today</th>
     </tr>
 	</thead>
   <tbody>
     <tr v-for="item in items.cases_time_series" >
       <th scope="row">{{item.date}}</th>
       <td>{{item.totalconfirmed}}</td>
+	  <td>{{item.dailyconfirmed}}</td>
     </tr>
   </tbody>
 </table>
