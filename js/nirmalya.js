@@ -15,7 +15,7 @@ $(document).ready(function () {
 })
 function populateVueData(datain){
 	var example1 = new Vue({
-		el: '#example-1',
+		el: '#data1',
 		data: {
 		items: datain
 		}
