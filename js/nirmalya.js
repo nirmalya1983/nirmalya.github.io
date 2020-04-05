@@ -9,6 +9,6 @@ $(document).ready(function () {
         console.log(myObj);
     }
 	};
-	xmlhttp.open("GET", "./js/result.js", true);
+	xmlhttp.open("GET", "https://nirmalya1983.github.io/nirmalya.github.io/js/result.js", true);
 	xmlhttp.send();
 })
